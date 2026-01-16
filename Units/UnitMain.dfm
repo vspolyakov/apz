@@ -10,6 +10,7 @@ object FormMain: TFormMain
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Menu = MenuMain
   TextHeight = 15
   object StatusBarMain: TStatusBar
     Left = 0
@@ -17,8 +18,13 @@ object FormMain: TFormMain
     Width = 624
     Height = 19
     Panels = <>
-    ExplicitLeft = 264
-    ExplicitTop = 368
-    ExplicitWidth = 0
+  end
+  object ActionListMain: TActionList
+    Left = 40
+    Top = 8
+  end
+  object MenuMain: TMainMenu
+    Left = 128
+    Top = 8
   end
 end
