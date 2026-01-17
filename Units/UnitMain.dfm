@@ -17,7 +17,10 @@ object FormMain: TFormMain
     Top = 422
     Width = 624
     Height = 19
-    Panels = <>
+    Panels = <
+      item
+        Width = 50
+      end>
   end
   object ActionListMain: TActionList
     Left = 64
@@ -31,7 +34,7 @@ object FormMain: TFormMain
     end
   end
   object MenuMain: TMainMenu
-    Left = 152
+    Left = 176
     Top = 136
     object MenuFileGroup: TMenuItem
       Caption = '&'#1060#1072#1081#1083
@@ -39,5 +42,10 @@ object FormMain: TFormMain
         Action = ActionFileExit
       end
     end
+  end
+  object ApplicationEventsMain: TApplicationEvents
+    OnHint = ApplicationEventsMainHint
+    Left = 64
+    Top = 80
   end
 end
