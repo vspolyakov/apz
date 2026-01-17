@@ -131,6 +131,11 @@
             <Form>FormMain</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="Units\UnitDatabase.pas">
+            <Form>DatabaseModule</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -157,7 +162,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="4">
-                <DeployFile LocalName="Win32\Debug\apz.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="apz.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>apz.exe</RemoteName>
                         <Overwrite>true</Overwrite>
