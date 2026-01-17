@@ -20,11 +20,24 @@ object FormMain: TFormMain
     Panels = <>
   end
   object ActionListMain: TActionList
-    Left = 40
-    Top = 8
+    Left = 64
+    Top = 136
+    object ActionFileExit: TAction
+      Category = 'FileGroup'
+      Caption = #1042'&'#1099#1093#1086#1076
+      Hint = #1042#1099#1093#1086#1076'|'#1047#1072#1074#1077#1088#1096#1080#1090#1100' '#1088#1072#1073#1086#1090#1091' '#1087#1088#1080#1083#1086#1078#1077#1085#1080#1103
+      ShortCut = 32883
+      OnExecute = ActionFileExitExecute
+    end
   end
   object MenuMain: TMainMenu
-    Left = 128
-    Top = 8
+    Left = 152
+    Top = 136
+    object MenuFileGroup: TMenuItem
+      Caption = '&'#1060#1072#1081#1083
+      object MenuFileExit: TMenuItem
+        Action = ActionFileExit
+      end
+    end
   end
 end

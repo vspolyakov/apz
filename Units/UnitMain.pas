@@ -12,6 +12,10 @@ type
     StatusBarMain: TStatusBar;
     ActionListMain: TActionList;
     MenuMain: TMainMenu;
+    ActionFileExit: TAction;
+    MenuFileGroup: TMenuItem;
+    MenuFileExit: TMenuItem;
+    procedure ActionFileExitExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -24,5 +28,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFormMain.ActionFileExitExecute(Sender: TObject);
+begin
+  Close;
+end;
 
 end.
